@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#cryptosWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 80vw;
+  margin: auto;
+  padding: 1rem 0;
+}
+:root {
+  --high-price-color: #ffd700;
+  --low-price-color: #c0c0c0;
+}
+.highPriceText {
+  color: var(--high-price-color);
+}
+.lowPriceText {
+  color: var(--low-price-color);
+}
+.cryptoCard {
+  padding: 1rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+  min-width: 300px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.cryptoCard h1 {
+  font-size: 1.2rem;
+}
+
+.cryptoCard img {
+  width: 40px;
+  height: 40px;
+}
+.cryptoCard p {
+  margin-left: auto;
+}
+.borderHighPrice {
+  border: 2px solid var(--high-price-color);
+}
+.borderLowPrice {
+  border: 2px solid var(--low-price-color);
+}
