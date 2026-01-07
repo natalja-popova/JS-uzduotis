@@ -48,7 +48,6 @@ const cryptoCards = async () => {
     // });
     //=============
     cryptoCard.addEventListener("click", () => {
-      const idx = cryptosData.findIndex((el) => el.name === e.name);
       console.log(e.name);
     });
 
