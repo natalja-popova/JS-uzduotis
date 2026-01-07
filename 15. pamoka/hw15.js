@@ -32,19 +32,24 @@ const cryptoCards = async () => {
     e.current_price >= 100
       ? cryptoCard.classList.add("borderHighPrice")
       : cryptoCard.classList.add("borderLowPrice");
-    /*
+    /*===============
     e.current_price >= 100
       ? (cryptoCard.classList.add("borderHighPrice"),
         cName.classList.add("highPriceText"))
       : (cryptoCard.classList.add("borderLowPrice"),
         cName.classList.add("lowPriceText"));
-*/
+================*/
     const cImg = document.createElement("img");
     cImg.src = e.image;
-
+    //============
+    // cryptoCard.addEventListener("click", () => {
+    //   const idx = cryptosData.findIndex((el) => el.name === e.name);
+    //   console.log(cryptosData[idx].name);
+    // });
+    //=============
     cryptoCard.addEventListener("click", () => {
       const idx = cryptosData.findIndex((el) => el.name === e.name);
-      console.log(cryptosData[idx].name);
+      console.log(e.name);
     });
 
     cryptoCard.append(cImg, cName, cPrice);
