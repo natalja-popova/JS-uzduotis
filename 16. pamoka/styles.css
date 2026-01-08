@@ -1,0 +1,41 @@
+#hikesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 80vw;
+  margin: auto;
+}
+#hikesWrapper a {
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+}
+h1 {
+  text-align: center;
+}
+.rootDetailsWrapper {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.rootImages {
+  display: flex;
+  gap: 2rem;
+}
+.rootImages img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1;
+}
+.rootSchema {
+  display: block;
+  max-height: 200px;
+  aspect-ratio: 1;
+}

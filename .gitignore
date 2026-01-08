@@ -1,0 +1,18 @@
+*.zip
+*.docx
+*.txt
+# Folders "1. text" to "9. text"
+**/[1-4]. */
+**/[6]. */
+**/[8-9]. */
+# Folders "10. text" to "15. text"
+**/1[0-4]. */
+**/js-8/
+
+#git rm -r --cached -f .
+#git rm -r --cached .
+#git add .
+#git commit -m "Apply .gitignore rules"
+
+#Remove-Item -Recurse -Force "5. Functions/.git"
+#git status
